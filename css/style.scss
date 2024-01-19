@@ -1,0 +1,46 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	font-size: 18px;
+	line-height: 1.5;
+	background: linear-gradient(171deg, #FFF7E4 0%, #FFCCBC 100%);
+	z-index: 1;
+}
+
+h1, h2 {
+	margin-bottom: 1em;
+	text-align: center;
+	letter-spacing: 0.11em;
+	font-family: 'Pacifico', cursive;
+}
+p {
+	margin-bottom: 1em;
+}
+
+.wrapper {
+	display: block;
+	margin: 0 auto;
+	max-width: 768px;
+}
+
+.chapter {
+	p {
+		display: inline-block;
+		&:first-of-type {
+			
+			&::first-letter {
+				font-family: 'Pacifico', cursive;
+				font-size: 30px;
+				// margin-right: 1rem;
+			}
+		}
+	}
+}
